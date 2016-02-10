@@ -2,14 +2,17 @@ include ../../common-components/head/head.jade
 
 doctype html
 html
-	+head( 'jade-sass-seed' )
+	+head('virtualsky')
 	body
-		.page-title-and-image
-			.page-title
-				| jade-sass-seed
-			.mineral
-		nav
-			a.nav-item( href='/index.html' )
-				| jade-sass-seed
-			a.nav-item( href='/page-one.html' )
-				| page-one
+		p.page-title
+			| virtualsky
+
+		.release-wrapper
+			img( src='images/040.jpg' )
+			p.release-title
+				| Laura†Birdie - Ever Changing
+
+				.bandcamp-link
+					img.arrow( src='images/arrow.svg' )
+					p.bandcamp-link-text
+					| $(cassette/digital)$
